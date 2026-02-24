@@ -1,0 +1,21 @@
+{
+  "name": "tc2005b_davidantonio_a01713432",
+  "version": "1.0.0",
+  "description": "",
+  "homepage": "https://github.com/DAVGAN513/tc2005b_DavidAntonio_A01713432#readme",
+  "bugs": {
+    "url": "https://github.com/DAVGAN513/tc2005b_DavidAntonio_A01713432/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DAVGAN513/tc2005b_DavidAntonio_A01713432.git"
+  },
+  "license": "ISC",
+  "author": "David Antonio Gandara Ruiz",
+  "type": "commonjs",
+  "main": "app.js",
+  "scripts": {
+    "start": "node --watch app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}

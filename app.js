@@ -1,26 +1,15 @@
-console.log("hola desde node");
+const express = require('express');
+const app = express();
 
-const filesystem = require('fs');
-
-filesystem.writeFileSync('hola.txt','hola desde node');
-
-const arreglo = [5000,60,90,100,10,20,10000,0,120];
-for (let item of arreglo){
-    setTimeout(() =>{
-        console.log(item);
-    },item);
-}
-
-const http = require('http');
-
-const server = http.createServer( (request, response) => {
-   // console.log(request);
-    console.log(request.url);
-   // console.log(response);
-    //response.setHeader('Content-Type','text/html');
-    //response.write("");
-    
-    response.end();
-
+//Middleware
+app.use((request, response, next) => {
+    console.log('Middleware!');
+    next(); //Le permite a la petición avanzar hacia el siguiente middleware
 });
-server.listen(3000);
+
+app.use((request, response, next) => {
+    console.log('Otro middleware!');
+    response.send('¡Hola mundo!'); //Manda la respuesta
+});
+
+app.listen(3000);

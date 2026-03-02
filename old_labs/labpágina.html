@@ -2,30 +2,38 @@
 <html>  
   <head>    
     <title>Mi página personal</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.4/css/bulma.min.css">
     <link rel="stylesheet" href="estilos.css">
   </head>  
   <body>  
-    <h1> David Antonio Gándara Ruiz</h1>
-    <p><strong>Estudio ITC estoy en 4to semestre</strong></p>  
-    <section> 
-      <h2><strong> Sobre mí </strong></h2>
-      <p> 
-        Hola soy David, nací en Durango, actualmente tengo 20 años las cosas que me apasionan de la carrera<br>
-        es todo el tema de base de datos y el poder desarrollar soluciones en los diferentes problemas.<br>
-        Además de esto lo que me apasiona son los deportes pero sobretodo el futbol mi equipo favorito es el Real Madrid.
-      </p>
+    <section class="hero is-link">
+    <div class="hero-body">
+      <h1 class="title">Daviud Antonio Gándara Ruiz</h1>
+      <p class="subtitle">Estudiante de ITC en 4to semestre</p>
+    </div>
     </section>
-    <section> 
-      <h2><strong>Mis Aficiones</strong></h2>
-      <p> 
-        1- Jugar futbol y el mismo deporte en general<br>
-        2- Ir al gimnasio<br>
-        3- Apender nuvas cosas relacionadas con mi carrera<br>
-        4- Ver peliculas, sobretodo las de acción
-      </p>
+    <h2>Ocupo Bulma</h2>
+  </section>
+  <div class="card">
+    <div class="card-content">
+      <div class="content">
+        Hola soy David, nací en Durango, actualmente tengo 20 años las cosas que me apasionan de la carrera<br>
+          es todo el tema de base de datos y el poder desarrollar soluciones en los diferentes problemas.<br>
+          Además de esto lo que me apasiona son los deportes pero sobretodo el futbol mi equipo favorito es el Real Madrid.
+      </div>
+    </div>
+  </div>
+    <section>
+      <h2>Mis Aficiones</h2>
+      <div class="columns">
+      <div class="column"> 1- Jugar futbol y el mismo deporte en general<br></div>
+      <div class="column"> 2- Ir al gimnasio</div>
+      <div class="column">3- Apender nuvas cosas relacionadas con mi carrera<br></div>
+      <div class="column">4- Ver peliculas, sobretodo las de acción</div>
+    </div>
     </section>
     <footer>  
-    <p><strong>Datos de contacto</strong></p>
+    <p>Datos de contacto</p>
     <p> 
       Nombre: David Antonio Gándara Ruiz<br>
       Matricula: A01713432<br>
@@ -34,9 +42,9 @@
     </p>
     </footer>
     <section class = "preguntas"> 
-      <center><h1><strong>Preguntas</strong></h1></center>
+      <center><h1>Preguntas</h1></center>
       <article> 
-        <p><strong>¿Cuál es la diferencia entre Internet y la World Wide Web? </strong><br>
+        <p>¿Cuál es la diferencia entre Internet y la World Wide Web?<br>
           La diferencia es que el internet es la infrestructura global que conecta los dispositivos y se puede visualizar en navegadores web<br>
           En cambio la World Wide Web se basa en protocolos de HTTPS y HTML para mostrar las páginas<br>
           conclusion la World Wide Web no podría existir sin internet pero el internet sísin World Wide Web
@@ -44,55 +52,55 @@
       </article>
 
       <article>
-        <p><strong>¿Cuáles son las partes de un URL?</strong></p>
+        <p>¿Cuáles son las partes de un URL?</p>
         <p> 
           Protocolo, dominio, ruta, parámetros,fragmentos
         </p>
       </article>
       <article>
-        <p><strong>¿Cuál es el propósito de los métodos HTTP: GET, HEAD, POST, PUT, PATCH, DELETE?</strong></p>
+        <p>¿Cuál es el propósito de los métodos HTTP: GET, HEAD, POST, PUT, PATCH, DELETE?</p>
         <p>
-          <strong>GET:</strong>recuperar datos específicos sin modificarlos, solicitar información<br>
-          <strong>Head:</strong>solicitar una respuesta sin enviar datos<br>
-          <strong>Post:</strong>enviar datos a un punto específico haciendo cambios en el servidos<br>
-          <strong>PUT:</strong>actualizar un recurso existente en el servidor<br>
-          <strong>Patch:</strong>aplicar modificaciones parciales a un recurso<br>
-          <strong>Delete:</strong>borrar un recurso en específico en el servidos
+          GET: recuperar datos específicos sin modificarlos, solicitar información<br>
+          Head: solicitar una respuesta sin enviar datos<br>
+          Post: enviar datos a un punto específico haciendo cambios en el servidos<br>
+          PUT: actualizar un recurso existente en el servidor<br>
+          Patch: aplicar modificaciones parciales a un recurso<br>
+          Delete: borrar un recurso en específico en el servidos
         </p>
       </article>
       <article>
-        <p><strong>¿Qué método HTTP se debe utilizar al enviar un formulario HTML, por ejemplo cuando ingresas tu usuario y contraseña en algún sitio? ¿Por qué?</strong></p>
+        <p>¿Qué método HTTP se debe utilizar al enviar un formulario HTML, por ejemplo cuando ingresas tu usuario y contraseña en algún sitio? ¿Por qué?</p>
         <p>
           El método sería Post ya que es quien ayuda a enviar datos al servidor de manera segura 
         </p>
       </article>
       <article>
-        <p><strong>Qué método HTTP se utiliza cuando a través de un navegador web se accede a una página a través de un URL?</strong></p>
+        <p>Qué método HTTP se utiliza cuando a través de un navegador web se accede a una página a través de un URL?</p>
         <p>
           El método sería Get ya que se utiliza para solicitar recursos del servidor como una página web
         </p>
       </article>
       <article>
-        <p><strong>Un servidor web devuelve una respuesta HTTP con código 200. ¿Qué significa esto? ¿Ocurrió algún error?</strong></p>
+        <p>Un servidor web devuelve una respuesta HTTP con código 200. ¿Qué significa esto? ¿Ocurrió algún error?</p>
         <p>
           No ocurrió un error, solo que el servidor acepto correctamente la solicitud 
         </p>
       </article>
       <article>
-        <p><strong>¿Es responsabilidad del desarrollador corregir un sitio web si un usuario reporta que intentó acceder al sitio y se encontró con un error 404? ¿Por qué?</strong></p>
+        <p>¿Es responsabilidad del desarrollador corregir un sitio web si un usuario reporta que intentó acceder al sitio y se encontró con un error 404? ¿Por qué?</p>
         <p>
           Si, ya que esto se debe por enlaces que no están bien o por páginas eliminadas<br>
           y esto es parte del mantenimiento y funcionamiento del sitio web 
         </p>
       </article>
       <article>
-        <p><strong>¿Es responsabilidad del desarrollador corregir un sitio web si un usuario reporta que intentó acceder al sitio y se encontró con un error 500? ¿Por qué?</strong></p>
+        <p>¿Es responsabilidad del desarrollador corregir un sitio web si un usuario reporta que intentó acceder al sitio y se encontró con un error 500? ¿Por qué?</p>
         <p>
           Si, ya que se debe por un problema interno del servidor o código de la aplicación
         </p>
       </article>
       <article>
-        <p><strong>¿Qué significa que un atributo HTML5 esté depreciado o desaprobado (deprecated)? Menciona algunos elementos de HTML 4 que en HTML5 estén desaprobados.</strong></p>
+        <p>¿Qué significa que un atributo HTML5 esté depreciado o desaprobado (deprecated)? Menciona algunos elementos de HTML 4 que en HTML5 estén desaprobados.</p>
         <p>
           Un elemneto depreciado es que ya no se recomienda utilar por que existen alternativas más completas y modernas<br>
           HTML5 no incluyen los atributos de presentacion de HTML4 ya que ahora se ocupa eso con CSS<br>
@@ -100,36 +108,36 @@
         </p>
       </article>
       <article>
-        <p><strong>¿Cuáles son las diferencias principales entre HTML 4 y HTML5?</strong></p>
+        <p>¿Cuáles son las diferencias principales entre HTML 4 y HTML5?</p>
         <p>
           Las principales diferencias son en ocupar etiquetas seménticas, soporte multimedia, eliminación de etiquetas de presentación<br>
           y mejora en el soporte de aplicaciones web,podemos decir que HTML5 mejora la estructura
         </p>
       </article>
       <article>
-        <p><strong>¿Qué componentes de estructura y estilo tiene una tabla?</strong></p>
+        <p>¿Qué componentes de estructura y estilo tiene una tabla?</p>
         <p>
           Esta compuesto por table,tr,td,th,esto lo que hace es que prganiza la información en filas y columnas<br>
           Pero en el estilo esto se ocupa más que nada por CSS
         </p>
       </article>
       <article>
-        <p><strong>¿Cuáles son los principales controles de una forma HTML5?</strong></p>
+        <p>¿Cuáles son los principales controles de una forma HTML5?</p>
         <p>
           Las principales son input,legend,label,select,button,option
         </p>
       </article>
       <article>
-        <p><strong>¿Qué tanto soporte HTML5 tiene el navegador que utilizas? </strong></p>
+        <p>¿Qué tanto soporte HTML5 tiene el navegador que utilizas?</p>
         <p>
           Los puntos que tuve fueron 526 y ocupo microsoft edge
         </p>
       </article>
       <article>
-        <p><strong>¿Cuál es el ciclo de vida de los sistemas de información?
-          ¿Cuál es el ciclo de desarrollo de sistemas de información?</strong></p>
+        <p>¿Cuál es el ciclo de vida de los sistemas de información?
+          ¿Cuál es el ciclo de desarrollo de sistemas de información?</p>
         <p>
-          <strong>El ciclo de la vida de los SI son:<br></strong>
+          El ciclo de la vida de los SI son:<br>
           <ol>
           <li> Análisis: identificar la necesidad y requisitos del sistema<br></li>
           <li> Diseño: planificación de la arquitectura</li>
@@ -137,7 +145,7 @@
           <li>Operación: el uso real en un entorno</li>
           <li>Mantenimiento: Actualización y mejora del sistema</li>
           </ol>
-          <strong>¿Cuál es el ciclo de desarrollo de sistemas de información?</strong>
+          ¿Cuál es el ciclo de desarrollo de sistemas de información?
           <ol>
             <li>Análisis: identificar y documentar las necesidades del cliente y del sistema</li>
             <li>Diseño: planificación de la arquitectura,base de datos,interfaces</li>

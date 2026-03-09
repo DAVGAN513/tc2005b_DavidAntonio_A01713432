@@ -1,23 +1,21 @@
 const express = require('express');
 const app = express();
 const path = require('path');
+const bodyParser = require('body-parser');
 
-app.use(express.static(path.join(__dirname, 'old_labs', 'public')));
+
 
 app.set('view engine', 'ejs');
 app.set('views', path.join(__dirname, 'old_labs', 'views'));
 
-app.get('/login', (request, response) => {
-    response.render('login');
-});
+app.use(express.static(path.join(__dirname, 'old_labs', 'public')));
+app.use(bodyParser.urlencoded({ extended: false }));
 
-app.get('/pagina', (request, response) => {
-    response.render('labpagina');
-});
+const rutasAutenticacion = require('./old_labs/routes/autor.routes');
+const rutasMain = require('./old_labs/routes/main.routes');
 
-app.get('/', (request, response) => {
-    response.redirect('/login');
-});
+app.use('/autor', rutasAutenticacion);
+app.use('/', rutasMain);
 
 app.use((request, response) => {
     response.status(404).send('404 página no encontrada');

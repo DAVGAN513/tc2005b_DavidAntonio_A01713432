@@ -1,20 +1,32 @@
 const express = require('express');
 const router = express.Router();
-const fs = require('fs');
+const intentos = [];
 
-router.get('/login', (request, response) => {
-    response.render('login');
+router.get('/login', (request, response) =>{
+    response.render('login',{titulo: 'Login'});
 });
 
-router.post('/login', (request, response) => {
+router.get('/labpagina', (request, response) =>{
+    response.render('labpagina',{titulo: 'Pagina Principal', lista_intentos: intentos});
+});
+
+router.get('/preguntas', (request, response) =>{
+    response.render('preguntas',{titulo: 'Preguntas'});
+});
+
+router.get('/referencias', (request, response) =>{
+    response.render('referencias',{titulo: 'Referencias'});
+});
+
+router.post('/login', (request, response) =>{
     const password = request.body.password;
     const confirmar = request.body.confirmar;
-    console.log("Datos recibidos:", { password, confirmar });
-    if (password == confirmar) {
-        fs.appendFileSync('datos_recibidos.txt', `Intento de login con password: ${password}\n`);
-        response.redirect('/labpagina');
+    if(password == confirmar){
+        intentos.push(password);
+        response.render('labpagina',{titulo: 'Lab Pagina', lista_intentos: intentos});
     }else{
-        response.send('Las contraseñas no coinciden. Por favor, inténtalo de nuevo.');
+        response.send('Las contraseñas no coinciden');
     }
-});
+})
+
 module.exports = router;

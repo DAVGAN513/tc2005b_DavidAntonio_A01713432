@@ -1,4 +1,18 @@
 # tc2005b_DavidAntonio_A01713432
+
+# Lab17 uso de base de datos
+
+- https://github.com/eduardo-hdez/KAS-B2B-Preorder-Catalog-System/blob/main/docs/avance_4/bd.sql
+- https://supabase.com/dashboard/project/ecbafdsxiwprojdyirdg
+
+# Lab 18 autenticación
+
+- https://github.com/eduardo-hdez/KAS-B2B-Preorder-Catalog-System/commit/01e5d9f6b30c7a1a27dbab000ae690c9b3d7d9e1
+
+# Lab19 
+
+- https://github.com/eduardo-hdez/KAS-B2B-Preorder-Catalog-System/blob/main/project/src/models/usuario.model.js
+
 # Lab23 RPC
 
 - https://github.com/eduardo-hdez/KAS-B2B-Preorder-Catalog-System/blob/main/project/src/models/producto.model.js 

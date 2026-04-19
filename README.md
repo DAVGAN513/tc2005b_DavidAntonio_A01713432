@@ -21,3 +21,6 @@
 # Lab 26 
 
 - https://github.com/eduardo-hdez/KAS-B2B-Preorder-Catalog-System/commit/e5a06cff5d8b78bee1c20d820c93d5cec6ec1817
+
+# Lab 24
+https://github.com/eduardo-hdez/Custora/commit/8552cf9d962b992209ac0ef7354eb811ba88e74b
